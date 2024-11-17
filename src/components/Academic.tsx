@@ -10,7 +10,7 @@ export default function Academic() {
           {/* Educación */}
           <div className="bg-gray-50 rounded-lg p-8 shadow-md">
             <div className="flex items-center gap-4 mb-6">
-              <BookOpen className="w-8 h-8 text-blue-600" />
+              <BookOpen className="w-10 h-10 text-blue-600 flex-shrink-0"/>
               <h3 className="text-xl font-bold">Educación</h3>
             </div>
             <div className="space-y-4">
@@ -22,11 +22,11 @@ export default function Academic() {
             </div>
           </div>
 
-          {/* Reconocimientos */}
-          <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+          {/* Logros y Reconocimientos */}
+          <div className="bg-gray-50 rounded-lg p-3 shadow-md">
             <div className="flex items-center gap-4 mb-6">
-              <Award className="w-8 h-8 text-blue-600" />
-              <h3 className="text-xl font-bold">Logros y Reconocimientos</h3>
+              <Award className="w-8 h-8 text-blue-600 flex-shrink-0" />
+              <h3 className="text-xl font-bold leading-tight flex-1">Logros y Reconocimientos</h3>
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-2">
@@ -34,17 +34,19 @@ export default function Academic() {
                 <div>
                   <h4 className="font-semibold">Excelencia Académica</h4>
                   <p className="text-gray-600">
-                    Promedio sobresaliente en el programa de Analista Programador
+                    Promedio sobresaliente en el programa de Analista Programador.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
+
+
           {/* Habilidades Técnicas */}
           <div className="bg-gray-50 rounded-lg p-8 shadow-md">
             <div className="flex items-center gap-4 mb-6">
-              <Code className="w-8 h-8 text-blue-600" />
+              <Code className="w-10 h-10 text-blue-600 flex-shrink-0"/>
               <h3 className="text-xl font-bold">Habilidades Técnicas</h3>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -71,37 +73,37 @@ export default function Academic() {
           {/* Intereses */}
           <div className="bg-gray-50 rounded-lg p-8 shadow-md">
             <div className="flex items-center gap-4 mb-6">
-              <Brain className="w-8 h-8 text-blue-600" />
+              <Brain className="w-10 h-10 text-blue-600 flex-shrink-0"/>
               <h3 className="text-xl font-bold">Intereses</h3>
             </div>
             <ul className="list-disc list-inside text-gray-600">
               <li>Desarrollo de software</li>
               <li>Inteligencia artificial</li>
-              <li>Desarrollo web full-stack</li>
+              <li>Desarrollo web front-end</li>
+              <li>Diseño de interfaces (UX/UI)</li>
               <li>Bases de datos</li>
             </ul>
           </div>
 
-          {/* Metodologías Ágiles */}
-          <div className="bg-gray-50 rounded-lg p-8 shadow-md">
-            <div className="flex items-center gap-4 mb-6">
-              <ClipboardList className="w-8 h-8 text-blue-600" />
-              <h3 className="text-xl font-bold">Metodologías Ágiles</h3>
-            </div>
-            <div className="space-y-4">
-              <p className="text-gray-600">
-                Experiencia práctica con Scrum en la planificación, ejecución y entrega de proyectos.
-              </p>
-              <ul className="list-disc list-inside text-gray-600">
-                <li>Roles desempeñados: Scrum Master y miembro del team developers.</li>
-                <li>Implementación de tableros Kanban para la organización visual de tareas y el seguimiento de sprints.</li>
-                <li>Herramientas utilizadas: Notion, Onedrive y GitHub Projects.</li>
-                <li>
-                  Enfoque en la mejora continua mediante retrospectivas y entregas incrementales.
-                </li>
-              </ul>
-            </div>
+                  {/* Metodologías Ágiles */}
+        <div className="bg-gray-50 rounded-lg p-7 shadow-md">
+          <div className="flex items-center gap-4 mb-6">
+            <ClipboardList className="w-8 h-8 text-blue-600 flex-shrink-0" />
+            <h3 className="text-xl font-bold leading-tight">Metodologías Ágiles</h3>
           </div>
+          <div className="space-y-4">
+            <p className="text-gray-600">
+              Experiencia práctica con Scrum en la planificación, ejecución y entrega de proyectos.
+            </p>
+            <ul className="list-disc list-inside text-gray-600">
+              <li><span className="font-bold">Roles desempeñados:</span> Scrum Master y miembro del team developers.</li>
+              <li>Implementación de tableros Kanban para la organización visual de tareas y el seguimiento de sprints.</li>
+              <li><span className="font-bold">Herramientas utilizadas:</span> Notion, Onedrive y GitHub Projects.</li>
+              <li>Enfoque en la mejora continua mediante retrospectivas y entregas incrementales.</li>
+            </ul>
+          </div>
+        </div>
+
         </div>
       </div>
     </section>

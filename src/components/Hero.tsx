@@ -1,5 +1,5 @@
 import React from 'react';
-import { BadgeCheck, ArrowRight, Mail, Linkedin, Github } from 'lucide-react';
+import { BadgeCheck, ArrowRight, Mail, Code } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -29,15 +29,16 @@ export default function Hero() {
           <div className="flex gap-4">
             <a
               href="#projects"
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
-              <ArrowRight className="w-5 h-5" />
+              <Code className="w-5 h-5" />
               Ver Proyectos
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 bg-white text-blue-800 hover:bg-gray-200 rounded-lg shadow-md transition"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-md transition"
             >
+              <Mail className="w-5 h-5" />
               Contactar
             </a>
           </div>
@@ -45,12 +46,12 @@ export default function Hero() {
 
         {/* Imagen */}
         <div className="lg:w-1/2 relative">
-        <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
-              alt="Coding workspace"
-              className="rounded-lg shadow-2xl"
-            />
-          <div className="absolute top-4 right-4 bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+            alt="Coding workspace"
+            className="rounded-lg shadow-lg"
+          />
+          <div className="absolute bottom-4 right-4 bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
             <BadgeCheck className="w-5 h-5 text-blue-600" />
             <span className="font-semibold">Excelencia Académica</span>
           </div>

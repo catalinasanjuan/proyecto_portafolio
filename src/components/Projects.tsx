@@ -10,10 +10,10 @@ const projects = [
     demo: "#"
   },
   {
-    title: "Proyecto 2",
-    description: "Descripción del proyecto y tecnologías utilizadas",
+    title: "INACAPludi",
+    description: "Aplicación Web para gestionarel préstamo de juegos de mesa del club INACAPludi para los alumnos de Inacap. Desarrollado con Next.js .",
     image: "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&q=80",
-    github: "#",
+    github: "https://github.com/catalinasanjuan/INACAPludi.git",
     demo: "#"
   },
   {
