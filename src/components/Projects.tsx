@@ -3,8 +3,8 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "Proyecto 1",
-    description: "Descripción del proyecto y tecnologías utilizadas",
+    title: "Sistema de Gestión de Prooductos",
+    description: "Aplicación Web para gestionar productos y categorías. Desarrollado con Phyton y Django.",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80",
     github: "#",
     demo: "#"
@@ -14,6 +14,13 @@ const projects = [
     description: "Descripción del proyecto y tecnologías utilizadas",
     image: "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&q=80",
     github: "#",
+    demo: "#"
+  },
+  {
+    title: "Sistema de Gestión de Cultivos",
+    description: "Aplicación móvil para gestionar cultivos y cosechas. Desarrollado con java en Android Studio.",
+    image: "https://www.dimensiona.com/wp-content/uploads/2021/01/beneficios-app-768x439.jpg",
+    github: "https://github.com/catalinasanjuan/verduritas_sa_app.git",
     demo: "#"
   },
   // Add more projects as needed

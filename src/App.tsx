@@ -19,7 +19,7 @@ function App() {
       </main>
       <footer className="bg-blue-900 text-white py-6">
         <div className="container mx-auto px-6 text-center">
-          <p>© {new Date().getFullYear()} - Desarrollado con Next.js por Catalina San Juan 2024</p>
+          <p>© {new Date().getFullYear()} - Desarrollado con Next.js por Catalina San Juan</p>
         </div>
       </footer>
     </div>

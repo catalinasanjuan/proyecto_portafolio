@@ -50,6 +50,7 @@ export default function Academic() {
             <div className="flex flex-wrap gap-2">
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Java</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">TypeScript</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">GDScript</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">React</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Django</span>
