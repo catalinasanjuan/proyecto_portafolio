@@ -16,13 +16,13 @@ export default function Hero() {
               ¡Hola! Soy <span className="text-blue-300">Catalina San Juan</span>
             </h1>
             <p className="text-lg">
-              Futuro Analista Programador | Aspirante a Desarrolladora Front-End
+              Futura Analista Programador | Aspirante a Desarrolladora Front-End
             </p>
           </div>
 
           {/* Descripción */}
           <p className="text-gray-200 leading-relaxed">
-            Estudiante destacado con excelencia académica, apasionado por el desarrollo de software y la resolución creativa de problemas tecnológicos.
+            Estudiante destacada con excelencia académica, apasionada por el desarrollo de software y la resolución creativa de problemas tecnológicos.
           </p>
 
           {/* Botones */}
