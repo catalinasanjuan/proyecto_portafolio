@@ -40,8 +40,8 @@ const projects = [
   {
     title: "Calculadora de notas",
     description: "Herramienta Web práctica y eficiente para estudiantes y profesores que deseen calcular promedios académicos de manera rápida y sencilla. Desarrollado en HTML, CSS y JavaScript",
-    image: "https://github.com/catalinasanjuan/Calculadora-de-Notas.git",
-    github: "https://github.com/catalinasanjuan/verduritas_sa_app.git",
+    image: "https://i.pinimg.com/736x/2f/b7/4e/2fb74e2aae3c64d80ef0dbe28f1e0104.jpg",
+    github: "https://github.com/catalinasanjuan/Calculadora-de-Notas.git",
     demo: "#"
   },
   {
