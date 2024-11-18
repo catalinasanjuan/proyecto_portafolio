@@ -3,9 +3,9 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "Sistema de Gestión de Prooductos",
+    title: "Sistema de Gestión de Productos",
     description: "Aplicación Web para gestionar productos y categorías. Desarrollado con Phyton y Django.",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80",
+    image: "https://github.com/catalinasanjuan/Sistema_de_Gesti-n_de_Productos.git",
     github: "#",
     demo: "#"
   },
