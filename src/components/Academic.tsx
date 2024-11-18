@@ -111,23 +111,22 @@ export default function Academic() {
             </div>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>
-                <span className="font-semibold">Trabajo en equipo:</span> Colaboro eficazmente con equipos
-                multidisciplinarios, fomentando una comunicación clara y respetuosa.
+                <span className="font-semibold">Trabajo en equipo</span> 
               </li>
               <li>
-                <span className="font-semibold">Responsabilidad:</span> Compromiso con la calidad y el cumplimiento de plazos establecidos en todos mis proyectos.
+                <span className="font-semibold">Responsabilidad</span> 
               </li>
               <li>
-                <span className="font-semibold">Adaptabilidad:</span> Capacidad para aprender rápidamente y ajustarme a nuevas tecnologías y entornos de trabajo.
+                <span className="font-semibold">Adaptabilidad</span> 
               </li>
               <li>
-                <span className="font-semibold">Resolución de problemas:</span> Enfoque analítico para identificar y solucionar desafíos técnicos de manera eficiente.
+                <span className="font-semibold">Resolución de problemas</span> 
               </li>
               <li>
-                <span className="font-semibold">Proactividad:</span> Toma de iniciativa para proponer mejoras y optimizar procesos en proyectos.
+                <span className="font-semibold">Proactividad</span> 
               </li>
               <li>
-                <span className="font-semibold">Organización:</span> Gestión efectiva del tiempo, priorizando tareas para maximizar resultados.
+                <span className="font-semibold">Organización</span> 
               </li>
             </ul>
           </div>
