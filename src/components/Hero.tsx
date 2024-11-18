@@ -1,5 +1,5 @@
 import React from 'react';
-import { BadgeCheck, ArrowRight, Mail, Code } from 'lucide-react';
+import { BadgeCheck, ArrowRight, Mail, Code, Download } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -40,6 +40,14 @@ export default function Hero() {
             >
               <Mail className="w-5 h-5" />
               Contactar
+            </a>
+            <a
+              href="/cv/Catalina_SanJuan-CV.pdf"
+              download="Catalina_San_Juan_CV.pdf"
+              className="px-6 py-3 bg-gray-200 text-blue-800 hover:bg-gray-300 rounded-lg shadow-md transition flex items-center gap-2"
+            >
+              <Download className="w-5 h-5" />
+              Descargar CV
             </a>
           </div>
         </div>
