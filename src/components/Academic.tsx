@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Award, Star, Code, Brain, ClipboardList } from 'lucide-react';
+import { BookOpen, Award, Star, Code, Brain, ClipboardList, Shield } from 'lucide-react';
 
 export default function Academic() {
   return (
@@ -103,7 +103,34 @@ export default function Academic() {
             </ul>
           </div>
         </div>
-
+                  {/* Fortalezas */}
+                  <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+            <div className="flex items-center gap-4 mb-6">
+              <Shield className="w-8 h-8 text-blue-600" />
+              <h3 className="text-xl font-bold">Fortalezas</h3>
+            </div>
+            <ul className="list-disc list-inside text-gray-600 space-y-2">
+              <li>
+                <span className="font-semibold">Trabajo en equipo:</span> Colaboro eficazmente con equipos
+                multidisciplinarios, fomentando una comunicación clara y respetuosa.
+              </li>
+              <li>
+                <span className="font-semibold">Responsabilidad:</span> Compromiso con la calidad y el cumplimiento de plazos establecidos en todos mis proyectos.
+              </li>
+              <li>
+                <span className="font-semibold">Adaptabilidad:</span> Capacidad para aprender rápidamente y ajustarme a nuevas tecnologías y entornos de trabajo.
+              </li>
+              <li>
+                <span className="font-semibold">Resolución de problemas:</span> Enfoque analítico para identificar y solucionar desafíos técnicos de manera eficiente.
+              </li>
+              <li>
+                <span className="font-semibold">Proactividad:</span> Toma de iniciativa para proponer mejoras y optimizar procesos en proyectos.
+              </li>
+              <li>
+                <span className="font-semibold">Organización:</span> Gestión efectiva del tiempo, priorizando tareas para maximizar resultados.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

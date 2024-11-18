@@ -46,7 +46,7 @@ const projects = [
   },
   {
     title: "INACAPludi MarketPlace - Landing Page",
-    description: "solución innovadora para el comercio en línea, diseñada para ofrecer una experiencia de usuario sencilla y eficiente",
+    description: "Solución innovadora para el comercio en línea, diseñada para ofrecer una experiencia de usuario sencilla y eficiente",
     image: "https://www.dimensiona.com/wp-content/uploads/2021/01/beneficios-app-768x439.jpg",
     github: "https://github.com/catalinasanjuan/INACAPludi-MarketPlace---Landing-Page.git",
     demo: "#"
