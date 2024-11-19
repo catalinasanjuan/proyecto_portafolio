@@ -20,7 +20,7 @@ const projects = [
     title: "Sistema de Gestión de Cultivos",
     description: "Aplicación móvil para gestionar cultivos y cosechas. Desarrollado con java en Android Studio.",
     image: "https://www.dimensiona.com/wp-content/uploads/2021/01/beneficios-app-768x439.jpg",
-    github: "https://github.com/catalinasanjuan/verduritas_sa_app.git",
+    github: "https://github.com/catalinasanjuan/verduritas_sa_app_movil.git",
     demo: "#"
   },
   {
