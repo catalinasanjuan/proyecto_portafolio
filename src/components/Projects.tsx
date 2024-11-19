@@ -74,10 +74,7 @@ export default function Projects() {
                     <Github className="w-5 h-5" />
                     Código
                   </a>
-                  <a href={project.demo} className="flex items-center gap-2 text-blue-600 hover:text-blue-800">
-                    <ExternalLink className="w-5 h-5" />
-                    Demo
-                  </a>
+
                 </div>
               </div>
             </div>
