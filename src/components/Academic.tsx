@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Award, Star, Code, Brain, ClipboardList, Shield } from 'lucide-react';
+import { BookOpen, Award, Star, Code, Brain, ClipboardList, Shield, Trophy, Medal } from 'lucide-react';
 
 export default function Academic() {
   return (
@@ -14,11 +14,23 @@ export default function Academic() {
               <h3 className="text-xl font-bold">Educación</h3>
             </div>
             <div className="space-y-4">
-              <div>
+              <div className="flex items-start gap-2">
+                <Code className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+                <div>
                 <h4 className="font-semibold">Técnico Analista Programador</h4>
                 <p className="text-gray-600">INACAP</p>
-                <p className="text-gray-500">2023 - Presente</p>
+                <p className="text-gray-500">2023 - 2024</p>
               </div>
+              </div>
+              <div className="space-y-4">
+              <div className="flex items-start gap-2">
+                <Medal className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+                <div>
+                <h3 className="font-semibold">Primer lugar del ranking de egresados en INACAP</h3>
+                <p className="text-gray-500">2024</p>
+                </div>
+              </div>  
+            </div>
             </div>
           </div>
 
@@ -39,9 +51,19 @@ export default function Academic() {
                 </div>
               </div>
             </div>
+            <div className="space-y-4">
+              <div className="flex items-start gap-2">
+                <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold">Certificado de Ranking de Egreso</h4>
+                  <p className="text-gray-600">
+                  Primer lugar del ranking de egresados en INACAP (2024), con un promedio de egreso de 6.7
+                  </p>
+                  <a href="/Ranking de egreso/Certificado_Ranking_de_Egreso.pdf" target="_blank">Ver certificado</a>
+                </div>
+              </div>
+            </div>
           </div>
-
-
 
           {/* Habilidades Técnicas */}
           <div className="bg-gray-50 rounded-lg p-8 shadow-md">
@@ -65,8 +87,13 @@ export default function Academic() {
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Firebase</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Firestore</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Godot</span>
-              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Boostrap</span>
-
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Bootstrap</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Oracle</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">MongoDB</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">MariaDB</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">SQLite</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Scrum</span>
             </div>
           </div>
 
