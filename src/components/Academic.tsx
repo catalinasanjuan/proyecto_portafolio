@@ -59,7 +59,12 @@ export default function Academic() {
                   <p className="text-gray-600">
                   Primer lugar del ranking de egresados en INACAP (2024), con un promedio de egreso de 6.7
                   </p>
-                  <a href="/Ranking de egreso/Certificado_Ranking_de_Egreso.pdf" target="_blank">Ver certificado</a>
+                  <button 
+                    onClick={() => window.open('/Ranking de egreso/Certificado_Ranking_de_Egreso.pdf', '_blank', 'toolbar=no,scrollbars=yes,resizable=yes,width=800,height=600')} 
+                    className="text-blue-600 hover:underline"
+                  >
+                    Ver certificado
+                  </button>
                 </div>
               </div>
             </div>

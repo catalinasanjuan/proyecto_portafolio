@@ -10,12 +10,6 @@ export default function Projects() {
       github: "https://github.com/catalinasanjuan/Sistema_de_Gesti-n_de_Productos.git",
     },
     {
-      title: "Sistema de Gestión de Cultivos",
-      description: "Aplicación móvil para gestionar cultivos y cosechas. Desarrollado con java en Android Studio.",
-      image: "https://www.dimensiona.com/wp-content/uploads/2021/01/beneficios-app-768x439.jpg",
-      github: "https://github.com/catalinasanjuan/verduritas_sa_app_movil.git",
-    },
-    {
       title: "Adivina el número",
       description: "Juego web dinámico y educativo, desarrollado para mejorar la lógica y la diversión de los usuarios al intentar adivinar números generados aleatoriamente. Desarrollado en HTML, CSS y JavaScript.",
       image: "https://i.pinimg.com/736x/d1/f5/47/d1f54779d59ff1fa53a01e8808ebc0be.jpg",
@@ -41,6 +35,15 @@ export default function Projects() {
       image: "https://www.dimensiona.com/wp-content/uploads/2021/01/beneficios-app-768x439.jpg",
       github: "https://github.com/catalinasanjuan/INACAPludi-MarketPlace---Landing-Page.git",
       demoLink: "https://inacapludi-marketplace-app.netlify.app/",
+    },
+    {
+      title: "Sistema de Gestión de Cultivos",
+      description:
+        "Aplicación móvil para gestionar cultivos y cosechas. Desarrollado con Java en Android Studio.",
+      image:
+        "https://i.pinimg.com/736x/71/98/4d/71984d9b72f9f62ee4892ecbd9ff1575.jpg",
+      github: "https://github.com/catalinasanjuan/verduritas_sa_app_movil.git",
+      demoLink: "/apk/verduritas_sa_app-debug.apk", // Enlace al APK
     },
   ];
 
