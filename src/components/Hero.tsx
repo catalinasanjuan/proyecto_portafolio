@@ -22,7 +22,7 @@ export default function Hero() {
 
           {/* Descripción */}
           <p className="text-gray-200 leading-relaxed">
-            Estudiante destacada con excelencia académica, apasionada por el desarrollo de software y la resolución creativa de problemas tecnológicos.
+            Estudiante destacada con excelencia académica y primer lugar en el ranking de egresados de un total de 39 estudiantes, apasionada por el desarrollo de software y la resolución creativa de problemas tecnológicos.
           </p>
 
           {/* Botones */}
