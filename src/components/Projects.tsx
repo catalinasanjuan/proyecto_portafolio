@@ -8,6 +8,7 @@ export default function Projects() {
       tools: [
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
         { name: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
+        { name: "Bootstrap", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" },
       ],
       description: "Aplicación Web para gestionar productos y categorías. Desarrollado con Phyton y Django.",
       image: "https://blog.destacame.cl/wp-content/uploads/2024/02/Destacame_privacidad_de_datos-1024x683.jpg",
