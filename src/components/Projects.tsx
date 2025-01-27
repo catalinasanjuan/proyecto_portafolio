@@ -28,6 +28,16 @@ export default function Projects() {
 
     },
     {
+      title: "Automatización de aplicaciones de escritorio",
+      tools: [
+        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "Pywinauto", icon: "https://user-images.githubusercontent.com/666037/45233486-c4fc5380-b287-11e8-80ce-b9a911a6cb0d.png" },
+      ],
+      description: "Software de automatización desktop utilizando de prueba la app Notepad. Desarrollado con Phyton y Pywinauto.",
+      image: "https://i.pinimg.com/736x/8f/58/fb/8f58fba71cdc2bfb752038cf4fd44b20.jpg",
+      github: "https://github.com/catalinasanjuan/Automatizaci-n_Pywinauto.git",
+    },
+    {
       title: "Skymon Dash",
       tools: [
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
