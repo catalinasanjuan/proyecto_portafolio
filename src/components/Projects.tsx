@@ -10,9 +10,11 @@ export default function Projects() {
         { name: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
         { name: "Bootstrap", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" },
       ],
-      description: "Aplicación Web para gestionar productos y categorías. Desarrollado con Phyton y Django.",
-      image: "https://blog.destacame.cl/wp-content/uploads/2024/02/Destacame_privacidad_de_datos-1024x683.jpg",
+      description: "Aplicación Web para gestionar productos y categorías. Desarrollado con Python y Django.",
+      image: "https://i.pinimg.com/736x/d7/22/a9/d722a9afc510c23be759d23d4c8f56a9.jpg",
       github: "https://github.com/catalinasanjuan/Sistema_de_Gesti-n_de_Productos.git",
+      demoLink: "https://catalina.pythonanywhere.com/",
+      credentialsFile: "/credenciales/credenciales_sistema.txt",
     },
     {
       title: "Adivina el número",
@@ -25,7 +27,6 @@ export default function Projects() {
       image: "https://i.pinimg.com/736x/d1/f5/47/d1f54779d59ff1fa53a01e8808ebc0be.jpg",
       github: "https://github.com/catalinasanjuan/Adivina-el-numero.git",
       demoLink: "https://adivina-el-numero-app.netlify.app/",
-
     },
     {
       title: "Automatización de aplicaciones de escritorio",
@@ -91,7 +92,6 @@ export default function Projects() {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Mis proyectos</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
           {projects.map((project, index) => (
             <div
               key={index}
@@ -103,20 +103,20 @@ export default function Projects() {
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
-                {/* Renderizado de herramientas */}
-                  {project.tools && (
-                  <div className="flex gap-9 mt-4 px-9">
-                    {project.tools.map((tool, idx) => (
-                      <img
-                        key={idx}
-                        src={tool.icon}
-                        alt={tool.name}
-                        title={tool.name}
-                        className="w-23 h-8"
-                      />
-                    ))}
-                  </div>
-                )}
+              {/* Renderizado de herramientas */}
+              {project.tools && (
+                <div className="flex gap-9 mt-4 px-9">
+                  {project.tools.map((tool, idx) => (
+                    <img
+                      key={idx}
+                      src={tool.icon}
+                      alt={tool.name}
+                      title={tool.name}
+                      className="w-23 h-8"
+                    />
+                  ))}
+                </div>
+              )}
               <div className="p-6">
                 {/* Título y descripción */}
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
@@ -144,7 +144,18 @@ export default function Projects() {
                       Demo
                     </a>
                   )}
-
+                  {/* Verificación para archivo de credenciales */}
+                  {project.credentialsFile && (
+                    <a
+                      href={project.credentialsFile}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                      Credenciales
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
