@@ -99,6 +99,7 @@ export default function Academic() {
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">SQLite</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Scrum</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">PyWinAuto</span>
             </div>
           </div>
 
