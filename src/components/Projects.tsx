@@ -26,7 +26,7 @@ export default function Projects() {
       description: "Juego web dinámico y educativo, desarrollado para mejorar la lógica y la diversión de los usuarios al intentar adivinar números generados aleatoriamente. Desarrollado en HTML, CSS y JavaScript.",
       image: "https://i.pinimg.com/736x/d1/f5/47/d1f54779d59ff1fa53a01e8808ebc0be.jpg",
       github: "https://github.com/catalinasanjuan/Adivina-el-numero.git",
-      demoLink: "https://adivina-el-numero-app.netlify.app/",
+      demoLink: "https://advinaelnumero.netlify.app/",
     },
     {
       title: "Automatización de aplicaciones de escritorio",
