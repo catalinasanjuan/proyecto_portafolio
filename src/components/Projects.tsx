@@ -14,7 +14,7 @@ export default function Projects() {
       image: "https://i.pinimg.com/736x/d7/22/a9/d722a9afc510c23be759d23d4c8f56a9.jpg",
       github: "https://github.com/catalinasanjuan/Sistema_de_Gesti-n_de_Productos.git",
       demoLink: "https://catalina.pythonanywhere.com/",
-      credentialsFile: "/credenciales/credenciales_sistema.txt",
+      credentialsFile: "/credenciales/credenciales_Sistema de Gestión de Productos.txt",
     },
     {
       title: "Adivina el número",
@@ -37,6 +37,18 @@ export default function Projects() {
       description: "Software de automatización desktop utilizando de prueba la app Notepad. Desarrollado con Phyton y Pywinauto.",
       image: "https://i.pinimg.com/736x/8f/58/fb/8f58fba71cdc2bfb752038cf4fd44b20.jpg",
       github: "https://github.com/catalinasanjuan/Automatizaci-n_Pywinauto.git",
+    },
+    {
+      title: "Librería El Gran Poeta",
+      tools: [
+        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "Flask", icon: "ANd9GcQg9yOAxnCTKdVvjRAaSMt8U8GG9UyL6uUf2w53HqyBmVbUayQJzqshqr" },
+      ],
+      description: "Aplicación Web para gestionar libros y autores. Desarrollado con Python y Flask.",
+      image: "https://i.pinimg.com/736x/eb/b0/5b/ebb05b4eb5ab67b4a643c7144f1ef8e0.jpg",
+      github: "https://github.com/catalinasanjuan/Librer-aElGranPoeta.git",
+      demoLink: "https://web-production-bdd22.up.railway.app/",
+      credentialsFile: "/credenciales/credenciales_Librería El Gran Poeta.txt",
     },
     {
       title: "Skymon Dash",
