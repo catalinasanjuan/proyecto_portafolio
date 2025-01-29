@@ -42,7 +42,7 @@ export default function Projects() {
       title: "Librería El Gran Poeta",
       tools: [
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-        { name: "Flask", icon: "ANd9GcQg9yOAxnCTKdVvjRAaSMt8U8GG9UyL6uUf2w53HqyBmVbUayQJzqshqr" },
+        { name: "Flask", icon: "https://i.pinimg.com/736x/d8/c2/a2/d8c2a2b6d5e6a2a5d3aaa82105e3879a.jpg" },
       ],
       description: "Aplicación Web para gestionar libros y autores. Desarrollado con Python y Flask.",
       image: "https://i.pinimg.com/736x/eb/b0/5b/ebb05b4eb5ab67b4a643c7144f1ef8e0.jpg",
