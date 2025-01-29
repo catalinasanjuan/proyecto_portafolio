@@ -1,0 +1,4 @@
+Credenciales de acceso de App "Sistema de Gestion de Productos"
+
+Usuario: admin
+Contraseña: inacap2024

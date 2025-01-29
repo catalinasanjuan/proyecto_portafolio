@@ -1,0 +1,4 @@
+Credenciales de acceso de App Libreria "El Gran Poeta"
+
+Usuario: Luisa Fernanda
+Contraseña: password123
