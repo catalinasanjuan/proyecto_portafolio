@@ -101,6 +101,20 @@ export default function Projects() {
       demoLink: "https://inacapludi-marketplace-app.netlify.app/",
     },
     {
+      "title": "The Clow Readings ",
+      "tools": [
+        { "name": "Vue 3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+        { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { "name": "Tailwind CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+        { "name": "GSAP", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { "name": "Netlify", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" }
+      ],
+      "description": "Aplicación interactiva para realizar una tirada mágica de Cartas Clow, inspirada en el universo de Cardcaptor Sakura. Desarrollado con Vue 3 y TypeScript.",
+      "image": "https://i.pinimg.com/736x/b2/39/4f/b2394f57ecff4d9c09d9ad06f31104f1.jpg", 
+      "github": "https://github.com/catalinasanjuan/The-Clow-Readings.git",
+      "demoLink": "https://the-clow-readings.netlify.app/"
+    },
+    {
       title: "Sistema de Gestión de Cultivos",
       tools: [
         { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
