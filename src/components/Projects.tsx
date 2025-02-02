@@ -53,6 +53,20 @@ export default function Projects() {
       credentialsFile: "/credenciales/credenciales_Libreria_El_Gran_Poeta.txt",
     },
     {
+      title: "Spin The Dare",
+      tools: [
+        { name: "Angular", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
+        { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      ],
+      description: "Aplicación web interactiva que genera desafíos aleatorios en diferentes categorías con una estética inspirada en casinos. Desarrollado con Angular y Howler.js para efectos de sonido.",
+      image: "https://i.pinimg.com/736x/85/6b/2f/856b2f06cc0ef316e217af105b25b745.jpg",
+      github: "https://github.com/catalinasanjuan/Spin-The-Dare.git",
+      demoLink: "https://spin-the-dare.netlify.app/"
+    },
+
+    {
       title: "Skymon Dash",
       tools: [
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
