@@ -127,6 +127,21 @@ export default function Projects() {
       github: "https://github.com/catalinasanjuan/verduritas_sa_app_movil.git",
       demoLink: "/apk/verduritas_sa_app-debug.apk", // Enlace al APK
     },
+    {
+      "title": "IsekAI Generator",
+      "tools": [
+        { "name": "Vue 3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+        { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { "name": "GSAP", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { "name": "Cohere AI", "icon": "https://avatars.githubusercontent.com/u/54850923?s=200&v=4" },
+        
+      ],
+      "description": "Generador de historias Isekai basado en IA. Los usuarios responden preguntas sobre su personalidad, forma de muerte y poder especial para recibir una historia personalizada generada con Cohere AI.",
+      "image": "https://i.pinimg.com/736x/16/71/84/16718428e1722967be263cf4bed0e0ef.jpg",  
+      "github": "https://github.com/catalinasanjuan/IsekIA-Generator.git",
+      "demoLink": "https://isekai-generator.netlify.app/"
+    }
+    
   ];
 
   return (
