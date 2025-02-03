@@ -140,6 +140,18 @@ export default function Projects() {
       "image": "https://i.pinimg.com/736x/16/71/84/16718428e1722967be263cf4bed0e0ef.jpg",  
       "github": "https://github.com/catalinasanjuan/IsekIA-Generator.git",
       "demoLink": "https://isekai-generator.netlify.app/"
+    },
+    {
+      "title": "GlitchVHS",
+      "tools": [
+        { "name": "Vue 3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+        { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { "name": "Fabric.js", "icon": "https://pbs.twimg.com/profile_images/1436375272/Screen_shot_2011-07-11_at_1.55.36_AM_400x400.png" }
+      ],
+      "description": "Aplicación web para transformar imágenes con efectos glitch y VHS retro. Los usuarios pueden subir imágenes, aplicar filtros con un solo clic y descargarlas en alta calidad.",
+      "image": "https://i.pinimg.com/736x/c5/88/fc/c588fc2db87f193e53725f04ee2d487a.jpg",
+      "github": "https://github.com/catalinasanjuan/GlitchVHS.git",
+      "demoLink": "https://glitchvhs.netlify.app"
     }
     
   ];
