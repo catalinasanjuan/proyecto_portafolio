@@ -19,17 +19,17 @@ export default function ProfessionalProfile() {
           {/* Texto */}
           <div className="text-lg text-gray-700 leading-relaxed lg:text-left text-center space-y-6">
             <p>
-              <span className="font-semibold text-blue-600">Desarrolladora Front-End</span>{' '}
+              <span className="font-semibold text-blue-600">Desarrolladora Front-End y QA Automation Engineer</span>{' '}
               con experiencia en la creación de interfaces dinámicas y responsivas utilizando
               frameworks como React, Next.js y Angular.
             </p>
             <p>
-              Enfocada en{' '}
-              <span className="font-semibold text-blue-600">brindar experiencias de usuario intuitivas</span>, accesibles y funcionales, con un diseño limpio y moderno.
+              Enfocada en el{' '}
+              <span className="font-semibold text-blue-600">desarrollo de software y automatización de pruebas</span>con herramientas como <span className="font-semibold text-blue-600">Playwright, Selenium, Jenkins y Docker</span>, optimizando la calidad y eficiencia en procesos CI/CD.
             </p>
             <p>
               Apasionada por aprender nuevas tecnologías y mejorar continuamente en el ámbito del
-              desarrollo de software.
+              desarrollo de software, aplicando Scrum y metodologías ágiles para una gestión eficiente de proyectos.
             </p>
           </div>
         </div>
