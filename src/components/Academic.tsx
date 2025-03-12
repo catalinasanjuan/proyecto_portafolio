@@ -101,6 +101,8 @@ export default function Academic() {
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Scrum</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">PyWinAuto</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Vue</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Playwright</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">CI/CD</span>
             </div>
           </div>
 
@@ -161,6 +163,12 @@ export default function Academic() {
               </li>
               <li>
                 <span className="font-semibold">Organización</span> 
+              </li>
+              <li>
+                <span className="font-semibold">Trabajo eficiente en entornos de alta presión</span>
+              </li>
+              <li>
+                <span className="font-semibold">Resiliencia y tolerancia a la frustración</span>
               </li>
             </ul>
           </div>
