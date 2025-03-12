@@ -114,6 +114,7 @@ export default function Academic() {
             </div>
             <ul className="list-disc list-inside text-gray-600">
               <li>Desarrollo de software</li>
+              <li>Automatización de Pruebas de Software y Procesos de Desarrollo</li>
               <li>Inteligencia artificial</li>
               <li>Desarrollo web front-end</li>
               <li>Diseño de interfaces (UX/UI)</li>
