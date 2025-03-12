@@ -25,7 +25,7 @@ export default function ProfessionalProfile() {
             </p>
             <p>
               Enfocada en el{' '}
-              <span className="font-semibold text-blue-600">desarrollo de software y automatización de pruebas</span>con herramientas como <span className="font-semibold text-blue-600">Playwright, Selenium, Jenkins y Docker</span>, optimizando la calidad y eficiencia en procesos CI/CD.
+              <span className="font-semibold text-blue-600">desarrollo de software y automatización de pruebas</span> con herramientas como <span className="font-semibold text-blue-600">Playwright, Selenium, Jenkins y Docker</span>, optimizando la calidad y eficiencia en procesos CI/CD.
             </p>
             <p>
               Apasionada por aprender nuevas tecnologías y mejorar continuamente en el ámbito del
