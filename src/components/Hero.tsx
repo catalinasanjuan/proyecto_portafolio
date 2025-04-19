@@ -59,14 +59,23 @@ export default function Hero() {
             alt="Coding workspace"
             className="rounded-lg shadow-lg"
           />
-          <div className="absolute bottom-16 right-4 bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
-            <BadgeCheck className="w-5 h-5 text-blue-600" />
-            <span className="font-semibold">Excelencia Académica</span>
+
+          {/* Tarjetas de logros */}
+          <div className="absolute bottom-4 right-4 flex flex-col gap-2">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+              <BadgeCheck className="w-5 h-5 text-blue-600" />
+              <span className="font-semibold">Excelencia Académica</span>
+            </div>
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-blue-600" />
+              <span className="font-semibold">Primer Lugar en Ranking de Egresados</span>
+            </div>
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-blue-600" />
+              <span className="font-semibold">Cuadro de Honor 2024</span>
+            </div>
           </div>
-          <div className="absolute bottom-4 right-4 bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
-            <Trophy className="w-5 h-5 text-blue-600" />
-            <span className="font-semibold">Primer Lugar en Ranking de Egresados</span>
-          </div>
+
         </div>
       </div>
     </section>
