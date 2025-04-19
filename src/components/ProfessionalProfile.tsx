@@ -10,7 +10,7 @@ export default function ProfessionalProfile() {
           {/* Foto */}
           <div className="flex-shrink-0">
           <img
-            src="https://i.pinimg.com/736x/9a/d1/c8/9ad1c858cfd13f525f350a6e76e75cc1.jpg"
+            src="https://i.pinimg.com/736x/47/6a/35/476a35516a76d328f4975855232e14e5.jpg"
             alt="Foto de Catalina San Juan"
             className="rounded-full shadow-lg w-64 h-auto object-cover"
             />

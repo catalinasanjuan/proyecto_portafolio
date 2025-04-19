@@ -4,35 +4,44 @@ import { BookOpen, Award, Star, Code, Brain, ClipboardList, Shield, Trophy, Meda
 export default function Academic() {
   return (
     <section id="academic" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Formación Académica</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Educación */}
-          <div className="bg-gray-50 rounded-lg p-8 shadow-md">
-            <div className="flex items-center gap-4 mb-6">
-              <BookOpen className="w-10 h-10 text-blue-600 flex-shrink-0"/>
-              <h3 className="text-xl font-bold">Educación</h3>
+    <div className="container mx-auto px-6">
+      <h2 className="text-3xl font-bold text-center mb-12">Formación Académica</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Educación */}
+        <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+          <div className="flex items-center gap-4 mb-6">
+            <BookOpen className="w-10 h-10 text-blue-600 flex-shrink-0"/>
+            <h3 className="text-xl font-bold">Educación</h3>
+          </div>
+          <div className="space-y-4">
+            <div className="flex items-start gap-2">
+              <Code className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+              <h4 className="font-semibold">Técnico Analista Programador</h4>
+              <p className="text-gray-600">INACAP</p>
+              <p className="text-gray-500">2023 - 2024</p>
+            </div>
             </div>
             <div className="space-y-4">
-              <div className="flex items-start gap-2">
-                <Code className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
-                <div>
-                <h4 className="font-semibold">Técnico Analista Programador</h4>
-                <p className="text-gray-600">INACAP</p>
-                <p className="text-gray-500">2023 - 2024</p>
+            <div className="flex items-start gap-2">
+              <Medal className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+              <h3 className="font-semibold">Primer lugar del ranking de egresados en INACAP</h3>
+              <p className="text-gray-500">2024</p>
               </div>
-              </div>
-              <div className="space-y-4">
-              <div className="flex items-start gap-2">
-                <Medal className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
-                <div>
-                <h3 className="font-semibold">Primer lugar del ranking de egresados en INACAP</h3>
-                <p className="text-gray-500">2024</p>
-                </div>
-              </div>  
-            </div>
-            </div>
+            </div>  
           </div>
+          <div className="space-y-4">
+            <div className="flex items-start gap-2">
+              <Trophy  className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+              <h3 className="font-semibold">Cuadro de Honor INACAP</h3>
+              <p className="text-gray-500">2024</p>
+              </div>
+            </div>  
+          </div>
+          </div>
+        </div>
 
           {/* Logros y Reconocimientos */}
           <div className="bg-gray-50 rounded-lg p-3 shadow-md">
@@ -61,6 +70,23 @@ export default function Academic() {
                   </p>
                   <button 
                     onClick={() => window.open('/Ranking de egreso/Certificado_Ranking_de_Egreso.pdf', '_blank', 'toolbar=no,scrollbars=yes,resizable=yes,width=800,height=600')} 
+                    className="text-blue-600 hover:underline"
+                  >
+                    Ver certificado
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-start gap-2">
+                <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold">Certificación AWS Cloud Practitioner Essentials</h4>
+                  <p className="text-gray-600">
+                  Comprensión fundamental de servicios en la nube, seguridad y arquitectura escalable con AWS.
+                  </p>
+                  <button 
+                    onClick={() => window.open('/AWS Cloud/AWS_Academy_Graduate_Catalina_San_Juan.pdf', '_blank', 'toolbar=no,scrollbars=yes,resizable=yes,width=800,height=600')} 
                     className="text-blue-600 hover:underline"
                   >
                     Ver certificado
@@ -103,6 +129,10 @@ export default function Academic() {
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Vue</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Playwright</span>
               <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">CI/CD</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Git</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">GitHub</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">AWS Cloud</span>
+              <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">QA</span>
             </div>
           </div>
 
