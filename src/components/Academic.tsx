@@ -94,6 +94,21 @@ export default function Academic() {
                 </div>
               </div>
             </div>
+            <div className="flex items-start gap-2">
+              <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-semibold">Certificación EF SET English</h4>
+                <p className="text-gray-600">
+                  Nivel B2 (Upper Intermediate) según el Marco Común Europeo (CEFR). Certificación obtenida en abril de 2025. 
+                  <button 
+                    onClick={() => window.open('/Idioma/EF SET Certificate-Catalina_San_Juan.pdf', '_blank', 'toolbar=no,scrollbars=yes,resizable=yes,width=800,height=600')} 
+                    className="text-blue-600 hover:underline"
+                  >
+                    Ver certificado
+                  </button>
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Habilidades Técnicas */}
