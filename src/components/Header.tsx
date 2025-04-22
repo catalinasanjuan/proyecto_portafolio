@@ -10,6 +10,7 @@ export default function Header() {
           <a href="#professional-profile" className="hover:text-blue-200 transition-colors">Sobre mí</a>
           <a href="#projects" className="hover:text-blue-200 transition-colors">Proyectos</a>
           <a href="#academic" className="hover:text-blue-200 transition-colors">Académico</a>
+          <a href="#experience" className="hover:text-blue-200 transition-colors">Experiencia</a>
           <a href="#contact" className="hover:text-blue-200 transition-colors">Contacto</a>
         </div>
       </nav>

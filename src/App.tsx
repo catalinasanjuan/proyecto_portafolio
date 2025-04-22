@@ -5,6 +5,8 @@ import Projects from './components/Projects';
 import Academic from './components/Academic';
 import ProfessionalProfile from './components/ProfessionalProfile';
 import Contact from './components/Contact';
+import ExperienceTimeline from './components/ExperienceTimeline';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Projects />
         <ProfessionalProfile />
         <Academic />
+        <ExperienceTimeline />
         <Contact />
       </main>
       <footer className="bg-blue-900 text-white py-6">
