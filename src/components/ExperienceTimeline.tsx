@@ -48,7 +48,7 @@ export default function ExperienceTimeline() {
               </div>
               <div className="ml-24">
                 <h3 className="text-xl font-bold text-blue-800">
-                  QA Junior (Práctica Profesional) - Atrys Chile
+                  Apoyo QA (Práctica Profesional) - Atrys Chile
                 </h3>
                 <div className="flex items-center text-sm text-gray-500 mb-2 mt-1">
                   <Calendar className="w-4 h-4 mr-2 text-blue-600" />
