@@ -44,7 +44,7 @@ export default function Academic() {
         </div>
 
           {/* Logros y Reconocimientos */}
-          <div className="bg-gray-50 rounded-lg p-3 shadow-md">
+          <div className="bg-gray-50 rounded-lg p-8 shadow-md min-h-[500px]">
             <div className="flex items-center gap-4 mb-6">
               <Award className="w-8 h-8 text-blue-600 flex-shrink-0" />
               <h3 className="text-xl font-bold leading-tight flex-1">Logros y Reconocimientos</h3>
