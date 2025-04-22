@@ -3,7 +3,8 @@ import { BadgeCheck, ArrowRight, Mail, Code, Download, Trophy } from 'lucide-rea
 
 export default function Hero() {
   return (
-    <section id="hero" className="py-20 bg-blue-800 text-white dark:bg-gray-900 dark:text-white">
+    <section id="hero" className="py-20 bg-blue-800 text-white dark:bg-gradient-to-r dark:from-gray-900 dark:to-gray-800 dark:text-white transition-colors duration-500">
+
 
       <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-8">
         {/* Texto */}
@@ -65,7 +66,7 @@ export default function Hero() {
 
 
         {/* Imagen + Logros */}
-        <div className="lg:w-1/2 w-full flex flex-col items-center relative">
+        <div className="lg:w-1/2 w-full flex flex-col items-center relative rounded-lg shadow-xl">
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
             alt="Coding workspace"

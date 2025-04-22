@@ -10,7 +10,8 @@ import ExperienceTimeline from './components/ExperienceTimeline';
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen transition-all duration-500 ease-in-out bg-white dark:bg-gray-900">
+
       <Header />
       <main>
         <Hero />
