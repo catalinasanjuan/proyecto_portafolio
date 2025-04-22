@@ -54,31 +54,29 @@ export default function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
-
+        {/* Imagen + Logros */}
+        <div className="lg:w-1/2 w-full flex flex-col items-center relative">
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
             alt="Coding workspace"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg w-full"
           />
-
-          {/* Tarjetas de logros */}
-          <div className="flex flex-col items-center gap-2 mt-4 lg:absolute lg:bottom-4 lg:right-4">
-            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+          <div className="flex flex-col gap-2 mt-4 lg:absolute lg:bottom-4 lg:right-4 lg:mt-0 items-center lg:items-end">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2 w-fit">
               <BadgeCheck className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Excelencia Académica</span>
             </div>
-            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2 w-fit">
               <Trophy className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Primer Lugar en Ranking de Egresados</span>
             </div>
-            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2 w-fit">
               <Trophy className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Cuadro de Honor 2024</span>
             </div>
           </div>
-
         </div>
+
       </div>
     </section>
   );
