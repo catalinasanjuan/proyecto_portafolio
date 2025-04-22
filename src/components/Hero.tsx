@@ -6,7 +6,8 @@ export default function Hero() {
     <section id="hero" className="py-20 bg-blue-800 text-white">
       <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-8">
         {/* Texto */}
-        <div className="lg:w-1/2 space-y-6">
+        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+
           {/* Título */}
           <div>
             <span className="bg-blue-600 text-sm font-bold py-1 px-3 rounded-full mb-4 inline-block">
@@ -53,7 +54,8 @@ export default function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="lg:w-1/2 relative">
+        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
             alt="Coding workspace"
