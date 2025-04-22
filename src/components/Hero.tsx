@@ -30,14 +30,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#projects"
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition w-full sm:w-auto"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
               <Code className="w-5 h-5" />
               Ver Proyectos
             </a>
             <a
               href="#contact"
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-md transition w-full sm:w-auto"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
               <Mail className="w-5 h-5" />
               Contactar
@@ -45,7 +45,7 @@ export default function Hero() {
             <a
               href="/cv/Catalina_SanJuan-CV.pdf"
               download="Catalina_San_Juan_CV.pdf"
-              className="px-6 py-3 bg-gray-200 text-blue-800 hover:bg-gray-300 rounded-lg shadow-md transition flex items-center gap-2 w-full sm:w-auto"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
               <Download className="w-5 h-5" />
               Descargar CV
@@ -62,15 +62,15 @@ export default function Hero() {
             className="rounded-lg shadow-lg w-full"
           />
           <div className="flex flex-col gap-2 mt-4 lg:absolute lg:bottom-4 lg:right-4 lg:mt-0 items-center lg:items-end">
-            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2 w-fit">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center justify-center gap-2 text-center">
               <BadgeCheck className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Excelencia Académica</span>
             </div>
-            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2 w-fit">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center justify-center gap-2 text-center">
               <Trophy className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Primer Lugar en Ranking de Egresados</span>
             </div>
-            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2 w-fit">
+            <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center justify-center gap-2 text-center">
               <Trophy className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Cuadro de Honor 2024</span>
             </div>
