@@ -1,0 +1,5 @@
+npm install
+npm run dev
+
+cd scripts
+node save-as-pdf.cjs
