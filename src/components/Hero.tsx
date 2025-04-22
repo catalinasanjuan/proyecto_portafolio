@@ -26,18 +26,19 @@ export default function Hero() {
             Estudiante destacada con excelencia académica y primer lugar en el ranking de egresados de un total de 39 estudiantes. Apasionada por el desarrollo de software y la resolución creativa de problemas tecnológicos.
           </p>
 
+          
           {/* Botones */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start items-center sm:items-start lg:items-center">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center sm:justify-start items-center sm:items-start lg:items-center">
             <a
               href="#projects"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
+              className="w-full sm:w-auto sm:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
               <Code className="w-5 h-5" />
               Ver Proyectos
             </a>
             <a
               href="#contact"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
+              className="w-full sm:w-auto sm:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
               <Mail className="w-5 h-5" />
               Contactar
@@ -45,24 +46,23 @@ export default function Hero() {
             <a
               href="/cv/Catalina_SanJuan-CV.pdf"
               download="Catalina_San_Juan_CV.pdf"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
+              className="w-full sm:w-auto sm:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
             >
               <Download className="w-5 h-5" />
               Descargar CV
             </a>
+            <a
+              href="/scripts/Portafolio-Catalina-San-Juan.pdf"
+              download="Portafolio-Catalina-San-Juan.pdf"
+              className="w-full sm:w-auto sm:min-w-[220px] flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
+            >
+              <Download className="w-5 h-5" />
+              Portafolio PDF
+            </a>
           </div>
-          <a
-            href="/scripts/Portafolio-Catalina-San-Juan.pdf"
-            download="Portafolio-Catalina-San-Juan.pdf"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
-          >
-            <Download className="w-5 h-5" />
-            Portafolio PDF
-          </a>
+          </div>
 
-        </div>
 
-        {/* Imagen */}
         {/* Imagen + Logros */}
         <div className="lg:w-1/2 w-full flex flex-col items-center relative">
           <img
