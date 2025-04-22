@@ -3,7 +3,8 @@ import { BadgeCheck, ArrowRight, Mail, Code, Download, Trophy } from 'lucide-rea
 
 export default function Hero() {
   return (
-    <section id="hero" className="py-20 bg-blue-800 text-white">
+    <section id="hero" className="py-20 bg-blue-800 text-white dark:bg-gray-900 dark:text-white">
+
       <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-8">
         {/* Texto */}
         <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">

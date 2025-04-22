@@ -3,12 +3,13 @@ import { BookOpen, Award, Star, Code, Brain, ClipboardList, Shield, Trophy, Meda
 
 export default function Academic() {
   return (
-    <section id="academic" className="py-20 bg-white">
+    <section id="academic" className="py-20 bg-white dark:bg-gray-900">
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl font-bold text-center mb-12">Formación Académica</h2>
+    <h2 className="text-3xl font-bold text-center mb-12 text-blue-800 dark:text-white">Formación Académica</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
         {/* Educación */}
-        <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md text-gray-800 dark:text-gray-300">
           <div className="flex items-center gap-4 mb-6">
             <BookOpen className="w-10 h-10 text-blue-600 flex-shrink-0"/>
             <h3 className="text-xl font-bold">Educación</h3>
@@ -18,8 +19,8 @@ export default function Academic() {
               <Code className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
               <h4 className="font-semibold">Técnico Analista Programador</h4>
-              <p className="text-gray-600">INACAP</p>
-              <p className="text-gray-500">2023 - 2024</p>
+              <p className="text-gray-600 dark:text-gray-300">INACAP</p>
+              <p className="text-gray-500 dark:text-gray-300">2023 - 2024</p>
             </div>
             </div>
             <div className="space-y-4">
@@ -27,7 +28,7 @@ export default function Academic() {
               <Medal className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
               <h3 className="font-semibold">Primer lugar del ranking de egresados en INACAP</h3>
-              <p className="text-gray-500">2024</p>
+              <p className="text-gray-500 dark:text-gray-300">2024</p>
               </div>
             </div>  
           </div>
@@ -36,7 +37,7 @@ export default function Academic() {
               <Trophy  className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
               <h3 className="font-semibold">Cuadro de Honor INACAP</h3>
-              <p className="text-gray-500">2024</p>
+              <p className="text-gray-500 dark:text-gray-300">2024</p>
               </div>
             </div>  
           </div>
@@ -44,7 +45,7 @@ export default function Academic() {
         </div>
 
           {/* Logros y Reconocimientos */}
-          <div className="bg-gray-50 rounded-lg p-8 shadow-md min-h-[500px]">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md text-gray-800 dark:text-gray-200">
             <div className="flex items-center gap-4 mb-6">
               <Award className="w-8 h-8 text-blue-600 flex-shrink-0" />
               <h3 className="text-xl font-bold leading-tight flex-1">Logros y Reconocimientos</h3>
@@ -54,7 +55,7 @@ export default function Academic() {
                 <Star className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Excelencia Académica</h4>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300">
                     Promedio sobresaliente en el programa de Analista Programador.
                   </p>
                 </div>
@@ -65,7 +66,7 @@ export default function Academic() {
                 <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Certificado de Ranking de Egreso</h4>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300">
                   Primer lugar del ranking de egresados en INACAP (2024), con un promedio de egreso de 6.7
                   </p>
                   <button 
@@ -82,7 +83,7 @@ export default function Academic() {
                 <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Certificación AWS Cloud Practitioner Essentials</h4>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300">
                   Comprensión fundamental de servicios en la nube, seguridad y arquitectura escalable con AWS.
                   </p>
                   <button 
@@ -98,7 +99,7 @@ export default function Academic() {
               <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-semibold">Certificación EF SET English</h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Nivel B2 (Upper Intermediate) según el Marco Común Europeo (CEFR). Certificación obtenida en abril de 2025. 
                   <button 
                     onClick={() => window.open('/Idioma/EF SET Certificate-Catalina_San_Juan.pdf', '_blank', 'toolbar=no,scrollbars=yes,resizable=yes,width=800,height=600')} 
@@ -112,7 +113,7 @@ export default function Academic() {
           </div>
 
           {/* Habilidades Técnicas */}
-          <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md text-gray-800 dark:text-gray-200">
             <div className="flex items-center gap-4 mb-6">
               <Code className="w-10 h-10 text-blue-600 flex-shrink-0"/>
               <h3 className="text-xl font-bold">Habilidades Técnicas</h3>
@@ -152,12 +153,12 @@ export default function Academic() {
           </div>
 
           {/* Intereses */}
-          <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md text-gray-800 dark:text-gray-200">
             <div className="flex items-center gap-4 mb-6">
               <Brain className="w-10 h-10 text-blue-600 flex-shrink-0"/>
               <h3 className="text-xl font-bold">Intereses</h3>
             </div>
-            <ul className="list-disc list-inside text-gray-600">
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
               <li>Desarrollo de software</li>
               <li>Automatización de Pruebas de Software y Procesos de Desarrollo</li>
               <li>Inteligencia artificial</li>
@@ -168,16 +169,17 @@ export default function Academic() {
           </div>
 
                   {/* Metodologías Ágiles */}
-        <div className="bg-gray-50 rounded-lg p-7 shadow-md">
+                  <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md text-gray-800 dark:text-gray-200">
           <div className="flex items-center gap-4 mb-6">
             <ClipboardList className="w-8 h-8 text-blue-600 flex-shrink-0" />
             <h3 className="text-xl font-bold leading-tight">Metodologías Ágiles</h3>
           </div>
           <div className="space-y-4">
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               Experiencia práctica con Scrum en la planificación, ejecución y entrega de proyectos.
             </p>
-            <ul className="list-disc list-inside text-gray-600">
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+
               <li><span className="font-bold">Roles desempeñados:</span> Scrum Master y miembro del team developers.</li>
               <li>Implementación de tableros Kanban para la organización visual de tareas y el seguimiento de sprints.</li>
               <li><span className="font-bold">Herramientas utilizadas:</span> Notion, Onedrive y GitHub Projects.</li>
@@ -186,12 +188,13 @@ export default function Academic() {
           </div>
         </div>
                   {/* Fortalezas */}
-                  <div className="bg-gray-50 rounded-lg p-8 shadow-md">
+                  <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md text-gray-800 dark:text-gray-200">
             <div className="flex items-center gap-4 mb-6">
               <Shield className="w-8 h-8 text-blue-600" />
               <h3 className="text-xl font-bold">Fortalezas</h3>
             </div>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+
               <li>
                 <span className="font-semibold">Trabajo en equipo</span> 
               </li>
