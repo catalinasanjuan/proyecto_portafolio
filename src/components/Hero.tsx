@@ -51,6 +51,15 @@ export default function Hero() {
               Descargar CV
             </a>
           </div>
+          <a
+            href="/scripts/Portafolio-Catalina-San-Juan.pdf"
+            download="Portafolio-Catalina-San-Juan.pdf"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
+          >
+            <Download className="w-5 h-5" />
+            Portafolio PDF
+          </a>
+
         </div>
 
         {/* Imagen */}
