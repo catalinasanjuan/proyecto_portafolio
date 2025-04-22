@@ -27,17 +27,17 @@ export default function Hero() {
           </p>
 
           {/* Botones */}
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#projects"
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition w-full sm:w-auto"
             >
               <Code className="w-5 h-5" />
               Ver Proyectos
             </a>
             <a
               href="#contact"
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-md transition"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-md transition w-full sm:w-auto"
             >
               <Mail className="w-5 h-5" />
               Contactar
@@ -45,7 +45,7 @@ export default function Hero() {
             <a
               href="/cv/Catalina_SanJuan-CV.pdf"
               download="Catalina_San_Juan_CV.pdf"
-              className="px-6 py-3 bg-gray-200 text-blue-800 hover:bg-gray-300 rounded-lg shadow-md transition flex items-center gap-2"
+              className="px-6 py-3 bg-gray-200 text-blue-800 hover:bg-gray-300 rounded-lg shadow-md transition flex items-center gap-2 w-full sm:w-auto"
             >
               <Download className="w-5 h-5" />
               Descargar CV
