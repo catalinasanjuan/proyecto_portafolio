@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
 
           {/* Botones */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start items-center sm:items-start lg:items-center">
             <a
               href="#projects"
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-center bg-white text-blue-800 border border-blue-800 hover:bg-blue-100 rounded-lg shadow-md transition"

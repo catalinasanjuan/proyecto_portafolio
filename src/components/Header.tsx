@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, BookOpen } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+    <header className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-5">
       <nav className="container mx-auto flex flex-col items-center sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4">
         <h1 className="text-xl font-bold">Portafolio</h1>
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-sm sm:text-base">
