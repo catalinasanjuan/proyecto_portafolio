@@ -63,7 +63,7 @@ export default function Hero() {
           />
 
           {/* Tarjetas de logros */}
-          <div className="absolute bottom-4 right-4 flex flex-col gap-2">
+          <div className="flex flex-col items-center gap-2 mt-4 lg:absolute lg:bottom-4 lg:right-4">
             <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center gap-2">
               <BadgeCheck className="w-5 h-5 text-blue-600" />
               <span className="font-semibold">Excelencia Académica</span>
