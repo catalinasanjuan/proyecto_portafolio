@@ -66,11 +66,11 @@ export default function Hero() {
 
 
         {/* Imagen + Logros */}
-        <div className="lg:w-1/2 w-full flex flex-col items-center relative rounded-lg shadow-xl">
+        <div className="lg:w-1/2 w-full flex flex-col items-center relative ">
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
             alt="Coding workspace"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg w-full"
           />
           <div className="flex flex-col gap-2 mt-4 lg:absolute lg:bottom-4 lg:right-4 lg:mt-0 items-center lg:items-end">
             <div className="bg-white text-blue-800 px-4 py-2 rounded-lg shadow-md flex items-center justify-center gap-2 text-center">
