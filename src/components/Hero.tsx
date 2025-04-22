@@ -67,6 +67,7 @@ export default function Hero() {
 
         {/* Imagen + Logros */}
         <div className="lg:w-1/2 w-full flex flex-col items-center relative ">
+
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
             alt="Coding workspace"
