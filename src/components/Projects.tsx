@@ -108,7 +108,7 @@ export default function Projects() {
       description: "Solución innovadora para el comercio en línea, diseñada para ofrecer una experiencia de usuario sencilla y eficiente",
       image: "https://i.pinimg.com/736x/26/73/61/2673611a2741c0c33c2b09566ead511d.jpg",
       github: "https://github.com/catalinasanjuan/INACAPludi-MarketPlace---Landing-Page.git",
-      demoLink: "https://inacapludi-marketplace-app.netlify.app/",
+      demoLink: "https://inacapludi-market-place-app.netlify.app/",
     },
     {
       "title": "The Clow Readings ",
