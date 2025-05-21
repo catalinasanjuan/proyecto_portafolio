@@ -162,6 +162,21 @@ export default function Projects() {
       "image": "https://i.pinimg.com/736x/c5/88/fc/c588fc2db87f193e53725f04ee2d487a.jpg",
       "github": "https://github.com/catalinasanjuan/GlitchVHS.git",
       "demoLink": "https://glitchvhs.netlify.app"
+    },
+    {
+      title: "Automatización con Make",
+      tools: [
+        { name: "Make", icon: "https://i.pinimg.com/736x/0a/49/1e/0a491e80f61b1614ac1e8c06e949b963.jpg"},
+        { name: "Google Sheets", icon: "https://i.pinimg.com/736x/75/c8/4e/75c84e33a653db7e7d8deb5f29e44aab.jpg" },
+        { name: "Google Forms", icon: "https://i.pinimg.com/736x/92/93/4d/92934dd38feadc783fb3e863d73883ec.jpg" },
+        { name: "Google Docs", icon: "https://i.pinimg.com/736x/c5/2d/85/c52d850030d3dfcec19ea63767e31459.jpg" },
+        { name: "SMTP", icon: "https://i.pinimg.com/736x/25/05/32/25053273b25f9cda399f4db27616fc4e.jpg" },
+      ],
+      description: "Automatización de contacto profesional utilizando Google Forms, Google Sheets y Make. Al completar el formulario, se dispara un flujo que recopila, organiza y envía la información automáticamente al destinatario.",
+      highlight: "Solicitar contacto profesional",
+      image: "https://i.pinimg.com/736x/82/dc/4b/82dc4b31c6263f60d4b05a90befb4901.jpg",
+      "demoVideo": ""
+      
     }
     
   ];
@@ -200,7 +215,29 @@ export default function Projects() {
               <div className="p-6">
                 {/* Título y descripción */}
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+
+                {project.title === "Automatización con Make" ? (
+                  <>
+                    <p className="text-gray-600 dark:text-gray-300 mb-2">
+                      Automatización de contacto profesional utilizando Google Forms, Google Sheets y Make. 
+                      Al completar el formulario, se dispara un flujo que recopila, organiza y envía la información automáticamente al destinatario.
+                    </p>
+                    <div className="mt-3">
+                      <span className="text-sm text-gray-700 dark:text-gray-300">
+                        Un ejemplo funcional es el botón:
+                      </span>
+                      <a
+                        href="#contact"
+                        className="mt-2 inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow transition-all duration-300"
+                      >
+                        {project.highlight}
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                )}
+
 
                 {/* Enlaces (Código y Manifestación) */}
                 <div className="flex gap-4 mt-4">
