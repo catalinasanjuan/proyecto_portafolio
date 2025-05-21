@@ -64,28 +64,6 @@ export default function Projects() {
       github: "https://github.com/catalinasanjuan/Automatizaci-n_Pywinauto.git",
     },
     {
-      title: "Adivina el número",
-      tools: [
-        { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-        { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      ],
-      description: "Juego web dinámico y educativo, desarrollado para mejorar la lógica y la diversión de los usuarios al intentar adivinar números generados aleatoriamente. Desarrollado en HTML, CSS y JavaScript.",
-      image: "https://i.pinimg.com/736x/1d/42/06/1d42061b38e7ebcbd1eab0592912b55f.jpg",
-      github: "https://github.com/catalinasanjuan/Adivina-el-numero.git",
-      demoLink: "https://advinaelnumero.netlify.app/",
-    },
-    {
-      title: "Automatización de aplicaciones de escritorio",
-      tools: [
-        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-        { name: "Pywinauto", icon: "https://user-images.githubusercontent.com/666037/45233486-c4fc5380-b287-11e8-80ce-b9a911a6cb0d.png" },
-      ],
-      description: "Software de automatización desktop utilizando de prueba la app Notepad. Desarrollado con Phyton y Pywinauto.",
-      image: "https://i.pinimg.com/736x/8f/58/fb/8f58fba71cdc2bfb752038cf4fd44b20.jpg",
-      github: "https://github.com/catalinasanjuan/Automatizaci-n_Pywinauto.git",
-    },
-    {
       title: "Sistema de Gestión de Cultivos",
       tools: [
         { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
@@ -164,6 +142,18 @@ export default function Projects() {
       github: "https://github.com/catalinasanjuan/Librer-aElGranPoeta.git",
       demoLink: "https://web-production-bdd22.up.railway.app/login",
       credentialsFile: "/credenciales/credenciales_Libreria_El_Gran_Poeta.txt",
+    },
+    {
+      title: "Adivina el número",
+      tools: [
+        { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      ],
+      description: "Juego web dinámico y educativo, desarrollado para mejorar la lógica y la diversión de los usuarios al intentar adivinar números generados aleatoriamente. Desarrollado en HTML, CSS y JavaScript.",
+      image: "https://i.pinimg.com/736x/1d/42/06/1d42061b38e7ebcbd1eab0592912b55f.jpg",
+      github: "https://github.com/catalinasanjuan/Adivina-el-numero.git",
+      demoLink: "https://advinaelnumero.netlify.app/",
     },
     {
       title: "Skymon Dash",
