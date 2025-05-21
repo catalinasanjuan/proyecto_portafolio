@@ -63,6 +63,7 @@ export default function Projects() {
       description: "Software de automatización desktop utilizando de prueba la app Notepad. Desarrollado con Phyton y Pywinauto.",
       image: "https://i.pinimg.com/736x/8f/58/fb/8f58fba71cdc2bfb752038cf4fd44b20.jpg",
       github: "https://github.com/catalinasanjuan/Automatizaci-n_Pywinauto.git",
+      demoVideo: "/videos/demo-pywinauto-flujo.mp4",
     },
     {
       title: "Sistema de Gestión de Cultivos",
