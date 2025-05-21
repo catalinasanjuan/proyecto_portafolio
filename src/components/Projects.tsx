@@ -52,6 +52,7 @@ export default function Projects() {
       description: "Automatización de formularios de Google Forms utilizando Playwright. Se desarrolló un script para completar y enviar formularios automáticamente, mejorando la eficiencia en la recolección de datos.",
       image: "https://i.pinimg.com/736x/ed/55/51/ed5551e2633e9b56e22bad6c947e43ac.jpg",
       github: "https://github.com/catalinasanjuan/Automatizaci-n-google-forms.git",
+      demoVideo: "/videos/demo-playwright-flujo.mp4",
     },
     {
       title: "Automatización de aplicaciones de escritorio",
