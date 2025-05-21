@@ -175,7 +175,7 @@ export default function Projects() {
       description: "Automatización de contacto profesional utilizando Google Forms, Google Sheets y Make. Al completar el formulario, se dispara un flujo que recopila, organiza y envía la información automáticamente al destinatario.",
       highlight: "Solicitar contacto profesional",
       image: "https://i.pinimg.com/736x/82/dc/4b/82dc4b31c6263f60d4b05a90befb4901.jpg",
-      "demoVideo": ""
+      demoVideo: "/videos/demo-make-flujo.mp4"
       
     }
     
@@ -241,6 +241,7 @@ export default function Projects() {
 
                 {/* Enlaces (Código y Manifestación) */}
                 <div className="flex gap-4 mt-4">
+                {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
@@ -250,30 +251,46 @@ export default function Projects() {
                     <Code className="w-5 h-5" />
                     Código
                   </a>
-                  {project.demoLink && (
-                    <a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                      Demo
-                    </a>
-                  )}
-                  {/* Verificación para archivo de credenciales */}
-                  {project.credentialsFile && (
-                    <a
-                      href={project.credentialsFile}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                      Credenciales
-                    </a>
-                  )}
-                </div>
+                )}
+
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                    Demo
+                  </a>
+                )}
+
+                {project.demoVideo && (
+                  <a
+                    href={project.demoVideo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                    Demo Video
+                  </a>
+                )}
+
+                {project.credentialsFile && (
+                  <a
+                    href={project.credentialsFile}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                    Credenciales
+                  </a>
+                )}
+              </div>
+
+
               </div>
             </div>
           ))}
