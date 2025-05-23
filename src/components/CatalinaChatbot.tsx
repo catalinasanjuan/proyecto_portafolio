@@ -12,8 +12,6 @@ const CatalinaChatbot = () => {
   const [isSending, setIsSending] = useState(false);
 
 
-
-
 const handleSend = async () => {
   if (!input.trim()) return;
 
@@ -56,8 +54,6 @@ const handleSend = async () => {
 };
 
 
-
-
   return (
     <div className="fixed bottom-4 right-4 w-80 bg-white border rounded-lg shadow-lg z-50">
       <div className="bg-blue-600 text-white p-2 rounded-t-lg flex justify-between items-center">
@@ -94,4 +90,3 @@ const handleSend = async () => {
 };
 
 export default CatalinaChatbot;
-
