@@ -11,48 +11,41 @@ const CatalinaChatbot = () => {
   const [input, setInput] = useState('');
   const [isSending, setIsSending] = useState(false);
 
+  const handleSend = async () => {
+    if (!input.trim()) return;
 
-const handleSend = async () => {
-  if (!input.trim()) return;
+    const userMessage = { sender: 'Tú', text: input };
+    setMessages((prev) => [...prev, userMessage]);
+    setInput('');
+    setIsSending(true);
 
-  const userMessage = { sender: 'Tú', text: input };
-  setMessages((prev) => [...prev, userMessage]);
-  setInput('');
-  setIsSending(true);
+    try {
+      await fetch('https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: input }),
+      });
 
-  try {
-    // 1. Enviar mensaje al webhook de entrada
-    await fetch('https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: input }),
-    });
+      await new Promise((res) => setTimeout(res, 2500));
 
-    // 2. Esperar a que Make termine
-    await new Promise((res) => setTimeout(res, 2500));
+      const response = await fetch(
+        `https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2?text=${encodeURIComponent(input)}`
+      );
+      const resultText = await response.text(); // ✅ respuesta como texto plano
 
-    // 3. Obtener la respuesta desde el webhook con el mensaje como parámetro
-    const response = await fetch(
-      `https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2?text=${encodeURIComponent(input)}`
-    );
-    const resultJson = await response.json();
-    const resultText = resultJson.result;
-
-
-    setMessages((prev) => [...prev, { sender: 'CatalinaBot', text: resultText }]);
-  } catch (error) {
-    setMessages((prev) => [
-      ...prev,
-      {
-        sender: 'CatalinaBot',
-        text: 'Lo siento, hubo un error al procesar tu mensaje. ¡Intenta nuevamente más tarde!',
-      },
-    ]);
-  } finally {
-    setIsSending(false);
-  }
-};
-
+      setMessages((prev) => [...prev, { sender: 'CatalinaBot', text: resultText }]);
+    } catch (error) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          sender: 'CatalinaBot',
+          text: '❌ Lo siento, hubo un error al procesar tu mensaje. ¡Intenta nuevamente más tarde!',
+        },
+      ]);
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <div className="fixed bottom-4 right-4 w-80 bg-white border rounded-lg shadow-lg z-50">
