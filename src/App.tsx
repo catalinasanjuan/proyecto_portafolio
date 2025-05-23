@@ -6,6 +6,8 @@ import Academic from './components/Academic';
 import ProfessionalProfile from './components/ProfessionalProfile';
 import Contact from './components/Contact';
 import ExperienceTimeline from './components/ExperienceTimeline';
+import ChatbotWidget from './components/ChatbotWidget';
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <p>© {new Date().getFullYear()} - Desarrollado con Next.js por Catalina San Juan</p>
         </div>
       </footer>
+      <ChatbotWidget />
+
     </div>
   );
 }
