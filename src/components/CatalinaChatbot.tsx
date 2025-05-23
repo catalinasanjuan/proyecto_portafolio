@@ -1,4 +1,3 @@
-// src/components/CatalinaChatbot.tsx
 import React, { useState } from 'react';
 
 const CatalinaChatbot = () => {
@@ -10,6 +9,7 @@ const CatalinaChatbot = () => {
   ]);
   const [input, setInput] = useState('');
   const [isSending, setIsSending] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // ⬅️ Mueve esto aquí arriba con los demás hooks
 
   const handleSend = async () => {
     if (!input.trim()) return;
@@ -31,7 +31,7 @@ const CatalinaChatbot = () => {
       const response = await fetch(
         `https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2?text=${encodeURIComponent(input)}`
       );
-      const resultText = await response.text(); // ✅ respuesta como texto plano
+      const resultText = await response.text();
 
       setMessages((prev) => [...prev, { sender: 'CatalinaBot', text: resultText }]);
     } catch (error) {
@@ -48,37 +48,53 @@ const CatalinaChatbot = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 w-80 bg-white border rounded-lg shadow-lg z-50">
-      <div className="bg-blue-600 text-white p-2 rounded-t-lg flex justify-between items-center">
-        <span>Chat con CatalinaBot</span>
-        <button onClick={() => window.location.reload()} className="text-white font-bold">×</button>
-      </div>
-      <div className="p-2 h-64 overflow-y-auto text-sm">
-        {messages.map((msg, index) => (
-          <div key={index} className="mb-2">
-            <strong>{msg.sender}:</strong> {msg.text}
-          </div>
-        ))}
-      </div>
-      <div className="p-2 border-t flex gap-1">
-        <input
-          className="flex-1 border rounded px-2 text-sm"
-          type="text"
-          placeholder="Ej: ¿Qué habilidades blandas tiene Catalina?"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-          disabled={isSending}
-        />
+    <>
+      {!isOpen && (
         <button
-          onClick={handleSend}
-          className="bg-blue-600 text-white px-3 rounded text-sm"
-          disabled={isSending}
+          onClick={() => setIsOpen(true)}
+          className="fixed bottom-4 right-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 z-50"
         >
-          Enviar
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+          </svg>
+          ¿Conversemos?
         </button>
-      </div>
-    </div>
+      )}
+
+      {isOpen && (
+        <div className="fixed bottom-4 right-4 w-80 bg-white border rounded-lg shadow-lg z-50">
+          <div className="bg-blue-600 text-white p-2 rounded-t-lg flex justify-between items-center">
+            <span>Chat con CatalinaBot</span>
+            <button onClick={() => setIsOpen(false)} className="text-white font-bold">×</button>
+          </div>
+          <div className="p-2 h-64 overflow-y-auto text-sm">
+            {messages.map((msg, index) => (
+              <div key={index} className="mb-2">
+                <strong>{msg.sender}:</strong> {msg.text}
+              </div>
+            ))}
+          </div>
+          <div className="p-2 border-t flex gap-1">
+            <input
+              className="flex-1 border rounded px-2 text-sm"
+              type="text"
+              placeholder="Ej: ¿Qué habilidades blandas tiene Catalina?"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+              disabled={isSending}
+            />
+            <button
+              onClick={handleSend}
+              className="bg-blue-600 text-white px-3 rounded text-sm"
+              disabled={isSending}
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
