@@ -1,3 +1,4 @@
+// src/components/CatalinaChatbot.tsx
 import React, { useState } from 'react';
 
 const CatalinaChatbot = () => {
@@ -9,12 +10,19 @@ const CatalinaChatbot = () => {
   ]);
   const [input, setInput] = useState('');
   const [isSending, setIsSending] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // ⬅️ Mueve esto aquí arriba con los demás hooks
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleSend = async () => {
-    if (!input.trim()) return;
+  const suggestedQuestions = [
+    '¿Qué habilidades blandas tiene Catalina?',
+    '¿Cuál es su experiencia en automatización QA?',
+    '¿Cómo puedo contactarla profesionalmente?',
+  ];
 
-    const userMessage = { sender: 'Tú', text: input };
+  const handleSend = async (msg?: string) => {
+    const finalInput = msg || input;
+    if (!finalInput.trim()) return;
+
+    const userMessage = { sender: 'Tú', text: finalInput };
     setMessages((prev) => [...prev, userMessage]);
     setInput('');
     setIsSending(true);
@@ -23,13 +31,13 @@ const CatalinaChatbot = () => {
       await fetch('https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: input }),
+        body: JSON.stringify({ text: finalInput }),
       });
 
       await new Promise((res) => setTimeout(res, 2500));
 
       const response = await fetch(
-        `https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2?text=${encodeURIComponent(input)}`
+        `https://hook.us2.make.com/0ypbzvfjgcovtg72dpmx4re679fgeov2?text=${encodeURIComponent(finalInput)}`
       );
       const resultText = await response.text();
 
@@ -49,6 +57,7 @@ const CatalinaChatbot = () => {
 
   return (
     <>
+      {/* Botón flotante para abrir el chat */}
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
@@ -61,6 +70,7 @@ const CatalinaChatbot = () => {
         </button>
       )}
 
+      {/* Chat emergente */}
       {isOpen && (
         <div className="fixed bottom-4 right-4 w-80 bg-white border rounded-lg shadow-lg z-50">
           <div className="bg-blue-600 text-white p-2 rounded-t-lg flex justify-between items-center">
@@ -73,6 +83,21 @@ const CatalinaChatbot = () => {
                 <strong>{msg.sender}:</strong> {msg.text}
               </div>
             ))}
+
+            {/* Preguntas sugeridas */}
+            {!isSending && (
+              <div className="flex flex-wrap gap-2 mt-2">
+                {suggestedQuestions.map((q, i) => (
+                  <button
+                    key={i}
+                    onClick={() => handleSend(q)}
+                    className="bg-gray-200 hover:bg-gray-300 text-xs px-2 py-1 rounded"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
           <div className="p-2 border-t flex gap-1">
             <input
@@ -85,7 +110,7 @@ const CatalinaChatbot = () => {
               disabled={isSending}
             />
             <button
-              onClick={handleSend}
+              onClick={() => handleSend()}
               className="bg-blue-600 text-white px-3 rounded text-sm"
               disabled={isSending}
             >
